@@ -1,10 +1,10 @@
 
-//Write a JavaScript function to remove duplicate items from an array (consider case sensitivity).
+///Write a JavaScript function to remove duplicate items from an array (consider case sensitivity).
 
 // Array containing both upper and lower case letters to demonstrate case sensitivity
 const myArray = ['a', 'D', 'c', 'C', 'c', 'a', 'A', 'G', 'F', 'G', 'H'];
 
-function removeDuplicates(num) {
+function removeDuplicates(letters) {
 
  //declare and empty array
 
@@ -15,10 +15,10 @@ function removeDuplicates(num) {
 
    */
    
-   for(let i=0; i<num.length; i++)  {
-    if (!(newArray.includes(num[i]) || newArray.includes(num[i].toLowerCase()))) {
+   for(let i=0; i<letters.length; i++)  {
+    if (!(newArray.includes(letters[i]) || newArray.includes(letters[i].toLowerCase()))) {
         
-        newArray.push(num[i])
+        newArray.push(letters[i])
     }
    }
    return newArray; 
